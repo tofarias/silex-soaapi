@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block titulo_conteudo %}
+<h2>Clientes</h2>
+{% endblock %}
+
+
+{% block conteudo %}
+<ul>
+
+	{% for cliente in clientes %}
+		<li>{{ cliente.nome }} ({{ cliente.email }})</li>
+	{% endfor %}
+
+</ul>
+
+{% endblock %}
